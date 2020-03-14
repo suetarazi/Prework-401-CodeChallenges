@@ -1,4 +1,4 @@
-#Code Challenges
+Code Challenges
 
 Problem 1: Array Max Result
 Problem Statement
