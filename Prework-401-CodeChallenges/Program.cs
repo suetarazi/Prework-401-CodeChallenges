@@ -9,6 +9,11 @@ namespace Prework_401_CodeChallenges
             CalculateLeapyear();
         }
 
+        public static void Challenge1()
+        {
+
+        }
+
         public static void CalculateLeapyear()
         {
 
@@ -33,6 +38,7 @@ namespace Prework_401_CodeChallenges
             }
 
         }
+
 
     }
 }
