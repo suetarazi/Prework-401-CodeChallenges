@@ -7,7 +7,10 @@ namespace Prework_401_CodeChallenges
         static void Main(string[] args)
         {
             CalculateLeapyear();
+
             Challenge4();
+            Challenge3();
+
         }
 
         public static void Challenge1()
@@ -39,8 +42,47 @@ namespace Prework_401_CodeChallenges
             }
 
         }
+        public static void Challenge3()
+        {
+            //accept an array   
+      int[] array = new int[3];
+            Console.WriteLine("Please input 3 numbers. Please hit ENTER after each.");
 
-    public static void Challenge4()
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine("I'm in the for loop");
+                array[i] = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(array[i]);
+            }
+            
+            //declare sum and product variables
+            int sum = 0;
+            int product = 0;
+            //sum loop
+            for (var i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+            Console.WriteLine("Sum is {sum}");
+            //product loop
+            for (var i = 0; i < array.Length; i++)
+            {
+                product *= array[i];
+            }
+            Console.WriteLine("Product is {product}");
+            //if statement sum==product
+            if (sum == product)
+            {
+                Console.WriteLine("You have a Perfect Sequence!");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, that is not a Perfect Sequence");
+            }
+
+
+        }
+public static void Challenge4()
         {
             //user input for length and width of matrix
             Console.WriteLine("Please enter the number of rows and columns for your array   ");
@@ -71,6 +113,9 @@ namespace Prework_401_CodeChallenges
             }
             //return new array
             Console.WriteLine(myArray);
-        }
+
+    
+    
     }
 }
+
