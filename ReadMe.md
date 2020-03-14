@@ -24,6 +24,7 @@ A section of your readme should contain basic information outlining the requirem
 Name of Challenge
 Instructions of Challenge
 Screen capture of successful output.
+
 Problem 2: Leap Year Calculator
 Problem Statement
 Given a year, report if it is a leap year.
@@ -46,6 +47,7 @@ A section of your readme should contain basic information outlining the requirem
 Name of Challenge
 Instructions of Challenge
 Screen capture of successful output.
+
 Problem 3: Perfect Sequence
 Problem Statement
 Given an array, return "Yes" if the sequence is considered a perfect sequence. Otherwise, return "No"
@@ -71,6 +73,7 @@ A section of your readme should contain basic information outlining the requirem
 Name of Challenge
 Instructions of Challenge
 Screen capture of successful output.
+
 Problem 4: Sum of Rows
 Problem Statement
 Given a matrix of integers. Return the sum of each row in a single dimensional array.
