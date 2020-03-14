@@ -45,16 +45,16 @@ namespace Prework_401_CodeChallenges
         public static void Challenge3()
         {
             //accept an array   
-      int[] array = new int[3];
+            int[] array = new int[3];
             Console.WriteLine("Please input 3 numbers. Please hit ENTER after each.");
 
             for (int i = 0; i < array.Length; i++)
             {
                 Console.WriteLine("I'm in the for loop");
                 array[i] = Int32.Parse(Console.ReadLine());
-            Console.WriteLine(array[i]);
+                Console.WriteLine(array[i]);
             }
-            
+
             //declare sum and product variables
             int sum = 0;
             int product = 0;
@@ -82,7 +82,7 @@ namespace Prework_401_CodeChallenges
 
 
         }
-public static void Challenge4()
+        public static void Challenge4()
         {
             //user input for length and width of matrix
             Console.WriteLine("Please enter the number of rows and columns for your array   ");
@@ -104,7 +104,7 @@ public static void Challenge4()
 
             //nested for loop to add each row
             int sum = 0;
-            for(var i=0; i<myArray.Length; i++)
+            for (var i = 0; i < myArray.Length; i++)
             {
                 for (var j = 0; j < myArray[i].Length; j++)
                 {
@@ -114,8 +114,8 @@ public static void Challenge4()
             //return new array
             Console.WriteLine(myArray);
 
-    
-    
+
+
+        }
     }
 }
-
