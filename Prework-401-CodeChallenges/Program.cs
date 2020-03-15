@@ -9,12 +9,14 @@ namespace Prework_401_CodeChallenges
             CalculateLeapyear();
 
             Challenge4();
-            Challenge3();
+            //Challenge3();
 
         }
 
         public static void Challenge1()
         {
+        
+
 
         }
 
@@ -104,11 +106,11 @@ namespace Prework_401_CodeChallenges
 
             //nested for loop to add each row
             int sum = 0;
-            for (var i = 0; i < myArray.Length; i++)
+            for (var i = 0; i < myArray.GetLength(0); i++)
             {
-                for (var j = 0; j < myArray[i].Length; j++)
+                for (var j = 0; j < myArray.GetLength(1); j++)
                 {
-                    sum += myArray[i][j];
+                    sum += myArray[i,j];
                 }
             }
             //return new array
