@@ -6,16 +6,53 @@ namespace Prework_401_CodeChallenges
     {
         static void Main(string[] args)
         {
+            Challenge1();
             CalculateLeapyear();
+
+            Challenge4();
             Challenge3();
-            //challenge1 and 4 calls
         }
 
         public static void Challenge1()
         {
 
+            int i;
+            int[] array = new int[5];
+            for(i=0; i<5; i++)
+            {
+            //user selects 5 numbers between 1-10 that are returned to the user as an array
+            Console.WriteLine("Please select 5 numbers between 1-10. Please hit enter after each.");
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //Return the array to the user:
+            for(i=0; i<5; i++)
+            {
+                Console.WriteLine("You entered {0}", array[i]);
+            }
+
+            //user picks one of the 5 numbers
+            Console.WriteLine("Please pick one of these numbers ");
+            string answer = Console.ReadLine();
+            int pickedNum = Int32.Parse(answer);
+            
+        //find frequency of that number in the array
+                int count = 0;
+            foreach(int n in array)
+            {
+                if(pickedNum == n)
+                {
+                    count++;
+                }
+                
+            }
+              //calculate score = inputted number * frequency
+              int score = pickedNum * count;
+                Console.WriteLine("Your score is {0}.", score);
+
+        
         }
 
+        //Challenge2:
         public static void CalculateLeapyear()
         {
 
@@ -42,8 +79,7 @@ namespace Prework_401_CodeChallenges
         }
         public static void Challenge3()
         {
-            //accept an array
-
+            //accept an array   
             int[] array = new int[3];
             Console.WriteLine("Please input 3 numbers. Please hit ENTER after each.");
 
@@ -51,9 +87,9 @@ namespace Prework_401_CodeChallenges
             {
                 Console.WriteLine("I'm in the for loop");
                 array[i] = Int32.Parse(Console.ReadLine());
-            Console.WriteLine(array[i]);
+                Console.WriteLine(array[i]);
             }
-            
+
             //declare sum and product variables
             int sum = 0;
             int product = 0;
@@ -79,7 +115,42 @@ namespace Prework_401_CodeChallenges
                 Console.WriteLine("Sorry, that is not a Perfect Sequence");
             }
 
+
+        }
+        public static void Challenge4()
+        {
+            //user input for length and width of matrix
+            Console.WriteLine("Please enter the number of rows and columns for your array   ");
+
+            //create 2d array and populate with random numbers
+            /*
+            int[,] multiDimensionalArray1 = new int[rows, columns];
+            Random rand = new Random();
+            for (i=0; i<rows; i++)
+            {
+                for(j=0; j<columns; j++)
+                {
+                    twoDimArray[i] = rand.Next(0, 9);
+                }
+            }
+            */
+            //making a test matrix with sample data shown in challenge4 info
+            int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
+
+            //nested for loop to add each row
+            int sum = 0;
+            for (var i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (var j = 0; j < myArray.GetLength(1); j++)
+                {
+                    sum += myArray[i,j];
+                }
+            }
+            //return new array
+            Console.WriteLine(myArray);
+
+
+
         }
     }
 }
-
