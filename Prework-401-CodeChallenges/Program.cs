@@ -56,19 +56,19 @@ namespace Prework_401_CodeChallenges
             
             //declare sum and product variables
             int sum = 0;
-            int product = 0;
+            int product = 1;
             //sum loop
             for (var i = 0; i < array.Length; i++)
             {
                 sum += array[i];
             }
-            Console.WriteLine("Sum is {sum}");
+            Console.WriteLine($"Sum is {sum}");
             //product loop
             for (var i = 0; i < array.Length; i++)
             {
                 product *= array[i];
             }
-            Console.WriteLine("Product is {product}");
+            Console.WriteLine($"Product is {product}");
             //if statement sum==product
             if (sum == product)
             {
