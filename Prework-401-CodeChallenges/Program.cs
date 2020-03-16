@@ -13,6 +13,7 @@ namespace Prework_401_CodeChallenges
             Challenge3();
         }
 
+        //Challenge 1:
         public static void Challenge1()
         {
 
@@ -77,6 +78,8 @@ namespace Prework_401_CodeChallenges
             }
 
         }
+
+        //Challenge 3:
         public static void Challenge3()
         {
             //accept an array   
@@ -117,6 +120,8 @@ namespace Prework_401_CodeChallenges
 
 
         }
+
+        //Challenge 4:
         public static void Challenge4()
         {
             //user input for length and width of matrix
